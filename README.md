@@ -1,10 +1,10 @@
 # My Portfolio
 
-This project showcases my skills, projects, and experiences as a web developer. It is built on the foundational work of Rishav Chanda, whose original portfolio inspired this version. This platform serves as a space to highlight my professional journey.
+This project serves as a template for my resume website. It is based on the original work of Rishav Chanda, whose portfolio inspired this version. The primary focus is on the linked resume website, which showcases my skills and experiences as a web developer.
 
 ## Overview
 
-**My Portfolio** is a React.js application designed to present my work, skills, and achievements in a visually appealing format. It offers insights into my background, showcases notable projects, and facilitates contact.
+**My Portfolio** is a React.js application designed to present my resume in a visually appealing format. It offers insights into my background, showcases notable projects, and facilitates contact.
 
 ### Key Features
 - **About Me**: An overview of my background, skills, and experiences.
@@ -52,4 +52,4 @@ Once the project is running locally, explore the various sections using the navi
 
 ## Acknowledgment
 
-This portfolio is built upon the contributions of [Rishav Chanda](https://github.com/rishavchanda/Portfolio-Youtube), whose original work has provided the foundation for this project. Their efforts have been instrumental in creating a space to showcase my abilities and experiences.
+This template is based on the contributions of [Rishav Chanda](https://github.com/rishavchanda/Portfolio-Youtube), whose original work has provided the foundation for this project. Their efforts have been instrumental in creating a space to showcase my abilities and experiences.
