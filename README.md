@@ -1,6 +1,6 @@
 # My Portfolio
 
-This project serves as a template for my resume website. It is based on the original work of Rishav Chanda, whose portfolio inspired this version. The primary focus is on the linked resume website, which showcases my skills and experiences as a web developer.
+This project serves as a template for my resume website. It is based on the original work of Rishav Chanda, whose portfolio inspired this version. The primary focus is on the linked resume website, which showcases my skills and experiences as an engineer.
 
 ## Overview
 
