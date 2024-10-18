@@ -21,6 +21,9 @@ const Container = styled.div`
     @media (max-width: 960px) {
         padding: 0px;
     }
+    background: linear-gradient(38.73deg, rgba(0, 114, 255, 0.15) 0%, rgba(0, 114, 255, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 153, 255, 0) 50%, rgba(0, 153, 255, 0.15) 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
 const Wrapper = styled.div`
@@ -50,16 +53,16 @@ margin-top: 20px;
   }
 `;
 
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
+// const Desc = styled.div`
+//     font-size: 18px;
+//     text-align: center;
+//     max-width: 600px;
+//     color: ${({ theme }) => theme.text_secondary};
+//     @media (max-width: 768px) {
+//         margin-top: 12px;
+//         font-size: 16px;
+//     }
+// `;
 
 const TimelineSection = styled.div`
     width: 100%;
@@ -82,20 +85,20 @@ const index = () => {
         <Container id="education">
             <Wrapper>
                 <Title>Education</Title>
-                <Desc>
+                {/* <Desc>
                     My education has been a journey of self-discovery and growth. My educational details are as follows.
-                </Desc>
+                </Desc> */}
                 <TimelineSection>
                     <Timeline>
                         {education.map((education,index) => (
                             <TimelineItem >
+                                <TimelineSeparator>
+                                    <TimelineDot variant="outlined" color="primary" />
+                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#0094D8' }} />}
+                                </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <EducationCard education={education}/>
                                 </TimelineContent>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
-                                </TimelineSeparator>
                             </TimelineItem>
                         ))}
                     </Timeline>

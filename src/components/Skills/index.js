@@ -9,6 +9,13 @@ justify-content: center;
 position: relative;
 z-index: 1;
 align-items: center;
+    padding: 0px 0px 60px 0px;
+    @media (max-width: 960px) {
+        padding: 0px;
+    }
+    background: linear-gradient(38.73deg, rgba(0, 114, 255, 0.15) 0%, rgba(0, 114, 255, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 153, 255, 0) 50%, rgba(0, 153, 255, 0.15) 100%);
+      clip-path: polygon(0 0, 30% 5%, 100% 0, 100% 100%, 0 100%);
 `
 
 const Wrapper = styled.div`
@@ -60,8 +67,8 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border: 0.1px solid #0094D8;  // Updated border color to match the theme
+  box-shadow: rgba(0, 114, 255, 0.15) 0px 4px 24px;  // Lighter blue shadow
   border-radius: 16px;
   padding: 18px 36px;
   @media (max-width: 768px) {
@@ -124,8 +131,8 @@ const Skills = () => {
     <Container id="skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 2 years.
-        </Desc>
+        {/* <Desc>Here are some of my skills on which I have been working on for the past 2 years.
+        </Desc> */}
         <SkillsContainer>
           {skills.map((skill) => (
             <Skill>

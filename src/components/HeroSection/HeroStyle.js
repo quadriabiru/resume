@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import _default from "../../themes/default";
+// import _default from "../../themes/default";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 80px 30px;
+  padding: 25px 30px;
   @media (max-width: 960px) {
     padding: 66px 16px;
   }
@@ -14,8 +14,10 @@ export const HeroContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
+  
+  background: linear-gradient(38.73deg, rgba(0, 114, 255, 0.15) 0%, rgba(0, 114, 255, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 153, 255, 0) 50%, rgba(0, 153, 255, 0.15) 100%);
 
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
 export const HeroBg = styled.div`
@@ -114,7 +116,7 @@ export const Img = styled.img`
 
 export const Title = styled.div`
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
@@ -130,7 +132,7 @@ export const Title = styled.div`
 
 export const TextLoop = styled.div`
   font-weight: 600;
-  font-size: 32px;
+  font-size: 28px;
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
@@ -151,9 +153,9 @@ export const Span = styled.span`
 `;
 
 export const SubTitle = styled.div`
-  font-size: 20px;
-  line-height: 32px;
-  margin-bottom: 42px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
   color: ${({ theme }) => theme.text_primary + 95};
 
   @media (max-width: 960px) {
@@ -164,6 +166,8 @@ export const SubTitle = styled.div`
     font-size: 16px;
     line-height: 32px;
   }
+  
+  white-space: pre-wrap;
 `;
 
 export const ResumeButton = styled.a`
@@ -172,32 +176,29 @@ export const ResumeButton = styled.a`
     appearance: button;
     text-decoration: none;
     width: 95%;
-    max-width: 300px;
+    max-width: 175px;
     text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
+    padding: 14px 0;
+    color: ${({ theme }) => theme.white};  // Keep the text color as white
     border-radius: 20px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+
+    // Updated background colors for blue theme
+    background: linear-gradient(225deg, ${({ theme }) => theme.primary} 0%, #0094D8 100%);
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), -20px -20px 60px rgba(0, 0, 0, 0.2);
+    
     &:hover {
         transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
+        transition: all 0.4s ease-in-out;
+        box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.2), filter: brightness(1.1);  // Slightly increase brightness on hover
     }    
-    
     
     @media (max-width: 640px) {
         padding: 12px 0;
         font-size: 18px;
     } 
-
 `;
+

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
-import _default from '../../themes/default';
+// import _default from '../../themes/default';
 
 export const Container = styled.div`
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
+    background: linear-gradient(38.73deg, rgba(0, 114, 255, 0.15) 0%, rgba(0, 114, 255, 0) 50%),
+            linear-gradient(141.27deg, rgba(0, 153, 255, 0) 50%, rgba(0, 153, 255, 0.15) 100%);
+
     display: flex;
     flex-direction: column;
     justify-content: center;

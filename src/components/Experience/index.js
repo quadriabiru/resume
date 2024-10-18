@@ -21,6 +21,14 @@ const Container = styled.div`
     @media (max-width: 960px) {
         padding: 0px;
     }
+
+        padding: 0px 0px 60px 0px;
+    @media (max-width: 960px) {
+        padding: 0px;
+    }
+    background: linear-gradient(38.73deg, rgba(0, 114, 255, 0.15) 0%, rgba(0, 114, 255, 0) 50%),
+        linear-gradient(141.27deg, rgba(0, 153, 255, 0) 50%, rgba(0, 153, 255, 0.15) 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%,100% 98%, 0 100%);
 `;
 
 const Wrapper = styled.div`
@@ -87,8 +95,8 @@ const index = () => {
                         {experiences.map((experience,index) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    <TimelineDot variant="outlined" color="primary" />
+                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#0094D8' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <ExperienceCard experience={experience}/>
